@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button';
 import { exportChat } from '@/lib/storage';
 
 const Index = () => {
+  console.log('Index component rendering...');
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const {
     chats,
@@ -28,6 +29,8 @@ const Index = () => {
     retryLastMessage,
     clearChat
   } = useChat();
+
+  console.log('Index component state:', { chats, activeChat, activeChatId, models });
 
   const selectedModel = models.find(m => m.id === selectedModelId) || models[0];
 
