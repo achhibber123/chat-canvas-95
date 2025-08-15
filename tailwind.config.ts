@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +64,20 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Chat-specific colors using design system tokens
+				'chat-bg': 'hsl(var(--chat-background))',
+				'chat-sidebar': 'hsl(var(--chat-sidebar))',
+				'chat-user': {
+					DEFAULT: 'hsl(var(--chat-user-bubble))',
+					foreground: 'hsl(var(--chat-user-bubble-foreground))'
+				},
+				'chat-assistant': {
+					DEFAULT: 'hsl(var(--chat-assistant-bubble))',
+					foreground: 'hsl(var(--chat-assistant-bubble-foreground))'
+				},
+				'chat-hover': 'hsl(var(--chat-hover))',
+				'chat-active': 'hsl(var(--chat-active))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
