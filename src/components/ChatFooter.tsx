@@ -27,7 +27,7 @@ export function ChatFooter({ apiBase, healthInfo }: ChatFooterProps) {
         </div>
         
         <div className="text-xs">
-          Elite Chat v1.0
+          Rishika Chat v1.0
         </div>
       </div>
     </footer>

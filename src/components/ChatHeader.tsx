@@ -31,7 +31,7 @@ export function ChatHeader({
         {/* App name and model selector */}
         <div className="flex items-center gap-4">
           <h1 className="text-xl font-semibold text-gradient">
-            Elite Chat
+            Rishika Chat
           </h1>
           
           <DropdownMenu>
